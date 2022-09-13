@@ -1,0 +1,103 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\setlength{\headheight}{15.2pt}
+\setcounter{secnumdepth}{3}
+\rfoot{Pg: \thepage}
+
+\geometry{
+   a4paper,
+   left = 20mm,
+   top = 20mm,
+}
+\begin{document}
+\thispagestyle{empty}
+
+\section*{}
+{\LARGE\makebox[\textwidth]{\textbf{KATHMANDU UNIVERSITY}}}
+
+\centerline{Department of Computer Science and Engineering}
+\centerline{Dhulikhel,Kavre}
+\begin{figure}[h]
+    \centerline{\includegraphics[width=50.546mm,height=50.546mm]{KU_Logo.png}}
+\end{figure}
+
+\centerline{\textbf{A Lab Report on}}
+\centerline{on}
+\centerline{\underline{\textbf{"Operating System Lab 4"}}}
+
+\vspace*{22mm}
+
+\centerline{\textbf{[Code No. : COMP 307]}}
+\centerline{(For partial fulfillment of 3rd Year/ 5th Semester in Computer Science)}
+
+\vspace*{40mm}
+
+\centerline{\textbf{Submitted by}}
+\centerline{\textbf{Aayush Pokharel(Roll No. 43)}}
+
+
+\vspace*{16mm}
+
+
+\centerline{\textbf{Submitted to}}
+\centerline{\textbf{Prof. Sudan Jha}}
+\centerline{\textbf{Dept of Computer Science and Engineering}}
+
+\vspace*{10mm}
+
+\centerline{\textbf{Submission Date: 13th September, 2022}}
+
+
+
+\clearpage
+\thispagestyle{empty}
+
+\section*{Abstract}
+The report is drafted to meet the prerequisites to partially fulfill the COMP 307 course offered by the Department of Computer Science and Engineering at Kathmandu University. This project is designed to expand the knowledge of various unix or unix-like commands and show how a terminal actually work.
+\\\\
+\textbf{Keywords:} command, terminal, unix
+\clearpage
+\thispagestyle{empty}
+\tableofcontents
+
+\clearpage
+\thispagestyle{empty}
+
+\clearpage
+\pagenumbering{arabic}
+\section{Introduction}
+\subsection{Terminal}
+Terminal is a utility which provides user with a command-line interface to interact with the system. A command line interface is present in all the operating systems. For windows, it command prompt and powershell are an example of command line interface where are for unix and unix derived operating system terminal is the command line interface system.
+
+
+\section{Commands}
+\subsection{Scripting Language}
+Generally a terminal has supports a myriad of scripting languages. For linux, Bourne Again Shell (Bash shell) is the most widely used shell scripting language and it come preinstalled in most linux distro.The commands used during the lab are written in bash shell scripting Languages.
+
+\subsection{Bash Scripts}
+The commands can be typed directly on the terminal or they can be written to a file and the file can be executed to run the commands specified. To make a file executable as a a script all it need is an executable permission and the shabang character sequence pointing to the correct interpreter to parse and execute the script.
+
+\subsection{Code Repository}
+The commands written during the Lab can has been stored in a git repository hosted on \href{https://github.com/AayushPokharel/LabAssignment4}{\textbf{GitHub}}.
+
+\subsection{Problem arisen}
+During the writing of the bash scripts, some issies did crop up and they were as follows:
+\begin{itemize}
+    \item \textbf{Need to install cal package}\\
+    The debian based linux had removed the cal package from being pre installed in their system. Therefore, for doing the question number two's problem a new package named textbf{ncal} had to be installed. It supported most of the features of the old cal packages so writing it was not an issue.
+    \item \textbf{Need to install figlet and toilet}\\
+    To display the text in a enlarged manner in the terminal, it was either necessary to capture the buffer sting, enlarge it and display the result as a bitmap in the terminal and since not all the terminal support image displaying capability, a alternative of the figlet and toilet package was chosen. These packages convert the text intro an ASCII art representation and enlarge the text without the use of any complete image processing pipeline. 
+    
+\end{itemize}
+
+\section{Conlusion}
+In the nutshell, the lab was was short and consisted of pretty easy tasks that could help a user to transition from a GUI oriented working paradigm to a command line working paradigm but it was very easy and failed to teach any new skills to a intermediate or power user who has some experience working in a command line.
+
+\end{document}
